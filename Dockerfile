@@ -2,7 +2,7 @@ FROM continuumio/miniconda3:4.8.3
 
 RUN conda install --yes \
     -c conda-forge \
-    python==3.7.8 \
+    python==3.7.10 \
     python-blosc==1.9.2 \
     cytoolz \
     dask==2021.4.* \
