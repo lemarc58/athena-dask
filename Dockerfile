@@ -3,17 +3,17 @@ FROM continuumio/miniconda3:4.8.3
 RUN conda install --yes \
     -c conda-forge \
     python==3.7.10 \
-    python-blosc==1.9.2 \
-    cytoolz \
-    dask==2021.4.* \
+    python-blosc==1.10.2 \
+    cytoolz==0.11.0 \
+    dask==2021.4.1 \
     nomkl \
     numpy==1.19.5 \
-	lz4==3.1.3 \
-    pandas==1.2.3 \
+    lz4==3.1.3 \
+    pandas==1.2.4 \
     tini==0.18.0 \
     joblib==1.0.1 \
-    scikit-learn==0.24.1 \
-	msgpack-python==1.0.2 \
+    scikit-learn==0.24.2 \
+    msgpack-python==1.0.2 \
     && conda clean -tipsy \
     && find /opt/conda/ -type f,l -name '*.a' -delete \
     && find /opt/conda/ -type f,l -name '*.pyc' -delete \
