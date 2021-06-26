@@ -3,9 +3,9 @@ FROM continuumio/miniconda3:4.8.3
 RUN conda install --yes \
     -c conda-forge \
     python==3.7.10 \
-    python-blosc==1.10.2 \
+    python-blosc \
     cytoolz==0.11.0 \
-    dask==2021.4.1 \
+    dask==2021.4.0 \
     nomkl \
     numpy==1.19.5 \
     lz4==3.1.3 \
